@@ -6,7 +6,7 @@
     "pretty": true,
     "sourceMap": true,
     "target": "es2017",
-    "outDir": "./functions/bundle",
+    "outDir": "dist",
     "lib": ["es6"],
     "resolveJsonModule": true,
     "types": ["node"],
