@@ -1,0 +1,26 @@
+{
+  "name": "apollo-server-react-app-typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "client": "yarn workspace web start",
+    "server": "yarn workspace api start",
+    "start": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\"",
+    "build:server": "yarn workspace api build",
+    "build:client": "yarn workspace web build",
+    "build": "concurrently --kill-others-on-fail \"yarn build:server\"  \"yarn build:client\""
+  },
+  "author": "Truong An",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "npm-check-updates": "^9.1.2"
+  }
+}
