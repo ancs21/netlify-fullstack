@@ -24,3 +24,6 @@ yarn
 ```bash
 yarn start
 ```
+
+### License
+MIT
