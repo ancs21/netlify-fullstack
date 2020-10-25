@@ -14,7 +14,8 @@
     "start": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\"",
     "build:server": "yarn workspace api build",
     "build:client": "yarn workspace web build",
-    "build": "concurrently --kill-others-on-fail \"yarn build:server\"  \"yarn build:client\""
+    "build": "concurrently --kill-others-on-fail \"yarn build:server\"  \"yarn build:client\"",
+    "test:server": "yarn workspace api test"
   },
   "author": "Truong An",
   "license": "MIT",
